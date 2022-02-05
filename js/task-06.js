@@ -7,7 +7,9 @@ function onBlur(event) {
 
   if (defaultLength === inputLength) {
     event.currentTarget.classList.add('valid');
+    event.currentTarget.classList.remove('invalid');
   } else {
     event.currentTarget.classList.add('invalid');
+    event.currentTarget.classList.remove('valid');
   }
 }
